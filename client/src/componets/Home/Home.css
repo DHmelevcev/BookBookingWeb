@@ -1,0 +1,206 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: local('src'),
+  url('../../Montserrat-Regular.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.Home {
+  min-height: 100vh;
+  min-width: 1200px;
+  background-color: #d0d0d0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Header {
+  height: 80px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #d0d0d0;
+  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: center;
+}
+
+.NavBar {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Logo {
+  height: 48px;
+  width: 240px;
+  margin: 15px 0;
+  padding: 0 15px;
+  background-color: #5860ea;
+  border-radius: 25px;
+  border-color: #4724c7;
+  border-style: solid;
+  border-width: 1px;
+  text-transform: uppercase;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SearchBar {
+  height: 30px;
+  width: 500px;
+  margin: 25px 15px;
+  border-radius: 15px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.2);
+  display: flex;
+}
+
+.SearchBar input {
+  height: 30px;
+  width: 470px;
+  padding: 0 0 0 12px;
+  border-radius: 15px 0 0 15px;
+  border-width: 0;
+  outline: none;
+}
+
+.SearchBar input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  margin-left: 10px;
+  opacity: .5;
+  cursor: pointer;
+  background:
+          linear-gradient(45deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 43%,#000 45%,#000 55%,rgba(0,0,0,0) 57%,rgba(0,0,0,0) 100%),
+          linear-gradient(135deg, transparent 0%,transparent 43%,#000 45%,#000 55%,transparent 57%,transparent 100%);
+}
+
+.SearchBar button {
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: aliceblue;
+  border-radius: 0 15px 15px 0;
+  border-width: 0;
+  cursor: pointer;
+}
+
+.SearchBar img {
+  height: 16px;
+  width: 16px;
+  transform: scale(-1, 1);
+}
+
+.Options {
+  width: 180px;
+  margin: 10px 0;
+  display: flex;
+  position: relative;
+  flex-direction: row-reverse;
+  justify-content: right;
+}
+
+.OptionsOffset {
+  height: 10px;
+  position: absolute;
+  font-size: 10px;
+  top: -10px;
+}
+
+.TopButton {
+  height: 60px;
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.TopButton img {
+  height: 45px;
+  width: 45px;
+}
+
+.HomeContainer {
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+}
+
+.Menu {
+  height: 90vh;
+  width: 220px;
+  margin-right: 20px;
+  padding-top: 10vh;
+  box-shadow: 3px 0 2px rgba(0,0,0,.05);
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 80px;
+}
+
+.Category {
+  height: 40px;
+  width: 200px;
+  margin-bottom: 10px;
+  padding: 0 10px 0 10px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.2);
+  border-radius: 20px 0 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Catalog {
+  width: 980px;
+  padding-bottom: 20px;
+}
+
+.GridHeader {
+  height: 9vh;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.BookGrid {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start
+}
+
+.Footer {
+  height: 60px;
+  width: calc(100% - 40px);
+  padding: 20px;
+  background-color: #5860ea;
+  border-top: 1px solid #4724c7;
+  color: aliceblue;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}

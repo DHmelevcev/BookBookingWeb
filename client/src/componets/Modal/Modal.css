@@ -1,0 +1,48 @@
+.Modal {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.Modal.active {
+    pointer-events: all;
+    opacity: 1;
+}
+
+.ModalContent {
+    height: 300px;
+    width: 300px;
+    position: fixed;
+    padding: 10px;
+    background-color: aliceblue;
+    box-shadow: 0 2px 3px rgba(0,0,0,.2);
+    border-radius: 12px;
+    opacity: 0;
+}
+
+.ModalContent.active {
+    opacity: 1;
+}
+
+#modalLogin {
+    transition: 0.3s opacity;
+}
+
+#modalBooked {
+    transition: 0.3s opacity;
+}
+
+#modalAdd {
+}
+
+#modalSubmitExit {
+    transition: 0.3s opacity;
+}

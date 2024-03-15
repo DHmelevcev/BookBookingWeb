@@ -1,0 +1,13 @@
+.BookedContainer {
+    padding: 10px;
+    text-align: center;
+}
+
+.BookedContainer p {
+    margin-top: 15px;
+}
+
+.BookedItem-exit-active {
+    opacity: 0;
+    transition: opacity 700ms ease-out;
+}

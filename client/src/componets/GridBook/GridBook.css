@@ -1,0 +1,29 @@
+.Book {
+    height: 280px;
+    width: 280px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);
+    border-radius: 1.3vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.Book img {
+    max-height: 250px;
+    max-width: 250px;
+}
+
+.Book p {
+    height: 21px;
+    width: 100%;
+    margin: 7px 0 2px;
+    font-size: 18px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
